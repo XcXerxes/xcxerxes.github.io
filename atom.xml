@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Leo</title>
+  <title>每天一点点，进步多一点...</title>
   
   
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-03-22T11:36:34.979Z</updated>
+  <updated>2018-03-22T14:57:16.610Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,23 +17,28 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2018/03/22/hello-world/"/>
-    <id>http://yoursite.com/2018/03/22/hello-world/</id>
-    <published>2018-03-22T11:36:34.979Z</published>
-    <updated>2018-03-22T11:36:34.979Z</updated>
+    <title>基本的Lunix命令</title>
+    <link href="http://yoursite.com/2018/03/22/liunx%E7%9A%84%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/"/>
+    <id>http://yoursite.com/2018/03/22/liunx的基础命令/</id>
+    <published>2018-03-22T14:57:16.609Z</published>
+    <updated>2018-03-22T14:57:16.610Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<p>做为一个希望向全栈工程师方向发展的程序员，必须得懂一些Lunix方面的知识，这节简单介绍一些基础的命令，以供大家一起学习…</p><h2 id="基本的Lunix命令："><a href="#基本的Lunix命令：" class="headerlink" title="基本的Lunix命令："></a>基本的Lunix命令：</h2><h3 id="tree命令"><a href="#tree命令" class="headerlink" title="tree命令"></a>tree命令</h3><p><strong><em>tree -d</em></strong> 只显示文件夹</p><p><strong><em>tree -L</em></strong> n 显示项目的层级。 <em>n</em> 表示层级数。比如想要显示项目三层级结构， 可以用</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tree -L 3  // 显示三层级目录结构</span><br></pre></td></tr></table></figure><p><strong><em>tree -I pattern</em></strong> 用于过滤不想要显示的文件或者文件夹。比如想过滤掉 <em>node_moudles</em> 文件夹，可以使用</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tree -I &quot;node_modules&quot;</span><br></pre></td></tr></table></figure><p><strong><em>tree &gt;tree.md</em></strong> 将项目结构输出到tree.md这个文件中,举个例子</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tree -L 3 -I &quot;node_modules&quot; // 输出三级目录结构 不包含 node_modules 文件夹</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+        &lt;p&gt;做为一个希望向全栈工程师方向发展的程序员，必须得懂一些Lunix方面的知识，这节简单介绍一些基础的命令，以供大家一起学习…&lt;/p&gt;
+&lt;h2 id=&quot;基本的Lunix命令：&quot;&gt;&lt;a href=&quot;#基本的Lunix命令：&quot; class=&quot;headerlink&quot; title=&quot;基
       
     
     </summary>
     
+      <category term="Lunix系统" scheme="http://yoursite.com/categories/Lunix%E7%B3%BB%E7%BB%9F/"/>
+    
+    
+      <category term="Lunix" scheme="http://yoursite.com/tags/Lunix/"/>
     
   </entry>
   
