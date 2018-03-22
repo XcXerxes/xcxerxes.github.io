@@ -5,8 +5,8 @@
 # Site
 title: Leo
 subtitle:
-description:
-keywords:
+description: this is a web Front-end technology blog, includes html css vuejs reactjs liunx
+keywords: html css javascript vuejs reactjs nodejs webpack 
 author: Leo
 language:
   - zh-CN
@@ -75,9 +75,12 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: indigo
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: https://github.com/XcXerxes/xcxerxes.github.io.git
+  branch: master
+
