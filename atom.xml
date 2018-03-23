@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-03-22T14:57:16.610Z</updated>
+  <updated>2018-03-23T00:56:16.928Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>处理视频播放自适应屏幕</title>
+    <link href="http://yoursite.com/2018/03/23/%E5%A4%84%E7%90%86%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E8%87%AA%E9%80%82%E5%BA%94%E5%B1%8F%E5%B9%95/"/>
+    <id>http://yoursite.com/2018/03/23/处理视频播放自适应屏幕/</id>
+    <published>2018-03-23T00:51:13.800Z</published>
+    <updated>2018-03-23T00:56:16.928Z</updated>
+    
+    <content type="html"><![CDATA[<p>在现代浏览器中，对于H5播放器的支持度也越来越好了，之前开发的一个前端UI框架中，需要对视频播放进行封装，就发现了这个新的属性…</p><h3 id="object-fit"><a href="#object-fit" class="headerlink" title="object-fit"></a>object-fit</h3><p>通过 css属性 object-fit 修改视频相对于父元素的几种显示方式：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"> fill &#123; object-fit: fill; &#125;</span><br><span class="line">.contain &#123; object-fit: contain; &#125;</span><br><span class="line">.cover &#123; object-fit: cover; &#125;</span><br><span class="line">.none &#123; object-fit: none; &#125;</span><br><span class="line">.scale-down &#123; object-fit: scale-down; &#125;</span><br><span class="line">每个属性值的具体含义如下（自己理解的白话文，官方释义见官网）：</span><br></pre></td></tr></table></figure><ul><li><p>fill: 中文释义“填充”。默认值。替换内容拉伸填满整个content box, 不保证保持原有的比例。</p></li><li><p>contain: 中文释义“包含”。保持原有尺寸比例。保证替换内容尺寸一定可以在容器里面放得下。因此，此参数可能会在容器内留下空白。</p></li><li><p>cover: 中文释义“覆盖”。保持原有尺寸比例。保证替换内容尺寸一定大于容器尺寸，宽度和高度至少有一个和容器一致。因此，此参数可能会让替换内容（如图片）部分区域不可见。</p></li><li><p>none: 中文释义“无”。保持原有尺寸比例。同时保持替换内容原始尺寸大小。</p></li><li><p>scale-down: 中文释义“降低”。就好像依次设置了none或contain, 最终呈现的是尺寸比较小的那个。</p></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;在现代浏览器中，对于H5播放器的支持度也越来越好了，之前开发的一个前端UI框架中，需要对视频播放进行封装，就发现了这个新的属性…&lt;/p&gt;
+&lt;h3 id=&quot;object-fit&quot;&gt;&lt;a href=&quot;#object-fit&quot; class=&quot;headerlink&quot; title=&quot;
+      
+    
+    </summary>
+    
+      <category term="CSS" scheme="http://yoursite.com/categories/CSS/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>基本的Lunix命令</title>
