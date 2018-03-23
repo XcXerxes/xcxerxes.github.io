@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-03-23T00:56:16.928Z</updated>
+  <updated>2018-03-23T01:10:55.131Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vuex基础篇</title>
+    <link href="http://yoursite.com/2018/03/23/vuex%E5%9F%BA%E7%A1%80%E7%AF%87/"/>
+    <id>http://yoursite.com/2018/03/23/vuex基础篇/</id>
+    <published>2018-03-23T01:07:11.106Z</published>
+    <updated>2018-03-23T01:10:55.131Z</updated>
+    
+    <content type="html"><![CDATA[<p>Vuex是一个专为 vue.js 开发的状态管理模式。它通过集中式的管理存储所有组件的状态，然后通过一定的规则保证状态以一种可预测的方式发生变化。</p><h2 id="vuex-vue状态管理模式"><a href="#vuex-vue状态管理模式" class="headerlink" title="vuex(vue状态管理模式)"></a>vuex(vue状态管理模式)</h2><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="http://a1.qpic.cn/psb?/V13gEWUW2BJxKq/QXc99SHH56*4NvyvUBqlu5lYaj06tPEgEN9bHEtr61Y!/b/dCABAAAAAAAA&bo=SgM3AkoDNwIDCSw!&rf=viewer_4" alt="image" title="">                </div>                <div class="image-caption">image</div>            </figure><p> <strong>Vuex</strong>是一个专为 <em>vue.js</em> 开发的<strong>状态管理模式</strong>。它通过集中式的管理存储所有组件的状态，然后通过一定的规则保证状态以一种可预测的方式发生变化。</p><h3 id="什么是’’状态管理模式’’"><a href="#什么是’’状态管理模式’’" class="headerlink" title="什么是’’状态管理模式’’?"></a>什么是’’状态管理模式’’?</h3><p> 首先用一个简单的 <figure class="highlight plain"><figcaption><span>计数来说明：</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"> </span><br></pre></td></tr></table></figure></p><pre><code>new Vue({    // state    data(){        return {            count:0        }    },    //view     template:`        &lt;div&gt;{{ count }}&lt;/div&gt;    `,    // actions    methods:{        increment(){            this.count++                        }    }})</code></pre><p> <code>`</code></p><p> 这个状态管理应用包含几个部分：</p><ul><li>state,当前组件的数据源</li><li>view，以声明式方式将state映射都视图上</li><li>actions, 响应用户操作 view时，状态的变化</li></ul><p>但是，当有<strong>多个组件共享状态</strong> 时，单向数据流的简洁性就会被破坏：</p><ul><li>多个视图依赖同一个状态，</li><li>来自不同视图的操作都需要改变同一状态</li></ul><p>对于问题一，通过传参的方式，对于<strong>多层级嵌套的组件</strong>会非常繁琐，对于问题二，经常采用<strong>父子组件</strong>直接引用或者事件来变更状态。但这些模式都无法很好维护代码的状态。</p><p> 而<strong>vuex</strong>,就在这种需求下应运而生。它将组件所有的共享状态抽取出来，以一种全局单例模式来管理状态。</p><p> 另外，通过定义和隔离状态的一些规则，使代码更结构化且易维护。</p><h3 id="什么情况下我应该使用Vuex"><a href="#什么情况下我应该使用Vuex" class="headerlink" title="什么情况下我应该使用Vuex?"></a>什么情况下我应该使用Vuex?</h3><p> 当你需要构建一个中大型单页应用，您可能会考虑如何更好的组件外部管理状态，而Vuex就是最后的选择。</p><pre><code>Vuex架构就像眼睛：您自会知道什么时候需要它</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Vuex是一个专为 vue.js 开发的状态管理模式。它通过集中式的管理存储所有组件的状态，然后通过一定的规则保证状态以一种可预测的方式发生变化。&lt;/p&gt;
+&lt;h2 id=&quot;vuex-vue状态管理模式&quot;&gt;&lt;a href=&quot;#vuex-vue状态管理模式&quot; class=&quot;he
+      
+    
+    </summary>
+    
+      <category term="Vue" scheme="http://yoursite.com/categories/Vue/"/>
+    
+    
+      <category term="Vue" scheme="http://yoursite.com/tags/Vue/"/>
+    
+      <category term="Vuex" scheme="http://yoursite.com/tags/Vuex/"/>
+    
+  </entry>
   
   <entry>
     <title>处理视频播放自适应屏幕</title>
